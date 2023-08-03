@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/test-task-softryzen/static/css/main.84c8eac8.css",
+    "main.js": "/test-task-softryzen/static/js/main.94e3fe7c.js",
+    "static/media/OpenSans-Regular.ttf": "/test-task-softryzen/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/test-task-softryzen/static/media/OpenSans-SemiBold.2f17aae884058c5a85df.ttf",
+    "index.html": "/test-task-softryzen/index.html",
+    "main.84c8eac8.css.map": "/test-task-softryzen/static/css/main.84c8eac8.css.map",
+    "main.94e3fe7c.js.map": "/test-task-softryzen/static/js/main.94e3fe7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84c8eac8.css",
+    "static/js/main.94e3fe7c.js"
+  ]
+}

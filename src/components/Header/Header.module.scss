@@ -7,6 +7,7 @@
   align-items: center;
   font-size: 40px;
   color: var(--primaryTextColor);
+  font-family: 'Poppins Medium';
 
   @include mq(tab) {
     color: var(--accentColor);

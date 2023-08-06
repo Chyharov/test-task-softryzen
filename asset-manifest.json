@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/test-task-softryzen/static/css/main.2773234a.css",
-    "main.js": "/test-task-softryzen/static/js/main.94e3fe7c.js",
+    "main.css": "/test-task-softryzen/static/css/main.22271609.css",
+    "main.js": "/test-task-softryzen/static/js/main.ce0056d3.js",
     "static/media/Poppins-Regular.ttf": "/test-task-softryzen/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/test-task-softryzen/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "static/media/Poppins-SemiBold.ttf": "/test-task-softryzen/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Alata-Regular.ttf": "/test-task-softryzen/static/media/Alata-Regular.a90e0970a7aca7d36f95.ttf",
     "index.html": "/test-task-softryzen/index.html",
-    "main.2773234a.css.map": "/test-task-softryzen/static/css/main.2773234a.css.map",
-    "main.94e3fe7c.js.map": "/test-task-softryzen/static/js/main.94e3fe7c.js.map"
+    "main.22271609.css.map": "/test-task-softryzen/static/css/main.22271609.css.map",
+    "main.ce0056d3.js.map": "/test-task-softryzen/static/js/main.ce0056d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2773234a.css",
-    "static/js/main.94e3fe7c.js"
+    "static/css/main.22271609.css",
+    "static/js/main.ce0056d3.js"
   ]
 }

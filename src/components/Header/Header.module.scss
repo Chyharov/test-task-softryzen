@@ -1,19 +1,39 @@
 @import '../../sass/utils/mixin';
 
 .header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: var(--primaryTextColor);
-  font-family: 'Poppins Medium';
+ 
+  background-color: #FEFCFF;
 
   @include mq(tab) {
-    color: var(--accentColor);
+
   }
 
   @include mq(desk) {
-    color: var(--backgroundAccentColor);
+
   }
+}
+
+.header__container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameLogo {
+  font-family: Alata Regular;
+  font-size: 24px;
+  color: var(--accentColor);
+}
+
+.selectLanguage {
+  padding: 12px;
+  width: 69px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  color: var(--secondTextColor);
+  background-color: #ffffff;
+  box-shadow: 2px 4px 9px 0 rgba(104, 173, 174, 0.28);
 }

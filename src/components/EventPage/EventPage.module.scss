@@ -1,0 +1,26 @@
+.event__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.buttons__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.buttonsList__item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.buttonsList__itemBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 54px;
+    height: 54px;
+    background-color: var(--backgroundColor);
+    border-radius: 8px;
+    box-shadow: 2px 4px 9px 0 #A68DAE;
+}

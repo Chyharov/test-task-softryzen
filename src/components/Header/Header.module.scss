@@ -1,7 +1,6 @@
 @import '../../sass/utils/mixin';
 
 .header {
- 
   background-color: #FEFCFF;
 
   @include mq(tab) {
@@ -59,7 +58,7 @@
   border: none;
   margin-right: 12px;
   background-color: var(--backgroundColor);
-  background-image: url('../../images/icons/shape.svg');
+  background-image: url('../../images/icons/search.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }

@@ -9,6 +9,10 @@
     margin-bottom: 40px;
 }
 
+.buttonsList__item {
+    position: relative;
+}    
+
 .buttonsList__item:not(:last-child) {
     margin-right: 24px;
 }
@@ -18,9 +22,64 @@
     align-items: center;
     justify-content: center;
     border: none;
-    width: 54px;
-    height: 54px;
+    width: 56px;
+    height: 56px;
     background-color: var(--backgroundColor);
     border-radius: 8px;
     box-shadow: 2px 4px 9px 0 #A68DAE;
+}
+
+.modalBackdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 158px;
+}
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.filterText {
+
+}
+
+.event__item {
+    width: 272px;
+    border-radius: 12px;
+    background-color: var(--backgroundColor);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event__itemImg {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.event__itemTitle {
+    margin: 16px 16px 8px 16px;
+    font-family: Poppins Medium;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.event__itemDescription {
+    margin: 8px 16px 16px 16px;
+    padding-bottom: 16px;
+    font-family: Poppins Regular;
+    font-size: 14px;
+    line-height: 1.72;
 }

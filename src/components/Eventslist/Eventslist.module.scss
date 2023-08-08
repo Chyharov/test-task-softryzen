@@ -59,6 +59,11 @@
     padding: 9px 24px;
 }
 
+.sort__listItem:hover,
+.sort__listItem:focus {
+    --color: #7b61ff
+}
+
 .sort__listBtn {
     width: 120px;
     display: flex;
@@ -74,6 +79,7 @@
 .sort__listBtn:hover,
 .sort__listBtn:focus {
     color: var(--accentColor);
+    fill: var(--accentColor);
 }
 
 .modalBackdropFilter {

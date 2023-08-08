@@ -7,6 +7,7 @@ import { events } from '../../services/Events.js'
 
 const Eventslist = () => {
   const [showModal, setShowModal] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const openModal = () => {
     setShowModal(true);
@@ -17,19 +18,35 @@ const Eventslist = () => {
   };
 
   return (
+    <section className={s.sectionEventList}>
     <div className={'container ' + s.event__container}>
       <ul className={s.buttons__list}>
         <li className={s.buttonsList__item}>
           <button className={s.buttonsList__itemBtn} onClick={openModal}>
-            <img className={s.buttonsList__itemImg} src={filterLogo3} alt="Моя SVG-іконка" />
+              <p className={s.selectedCategory}>{selectedCategory || ''}</p>
+              <img className={s.buttonsList__itemImg} src={filterLogo3} alt="Моя SVG-іконка" />
           </button>
           {showModal && (
             <div className={s.modalBackdrop}>
               <div className={s.modalContent}>
-                <button className={s.closeButton} onClick={closeModal}>Закрити</button>
-                <div className={s.filterText}>
-                  Текст з фільтрами для вибору
-                </div>
+                <button className={s.closeButton} onClick={closeModal}>
+                  <img className={s.closeButton__img} src={filterLogo3} alt="Моя SVG-іконка" />
+                  <p>{selectedCategory || 'Category'}</p>
+                </button>
+                  <ul className={s.filter__list}>
+                  {events.map((event) => (
+                    <li className={s.filter__listItem} key={event.category}>
+                      <button
+                        className={`${s.filter__listBtn} ${selectedCategory === event.category ? s.selectedCategory : ""}`}
+                        onClick={() => {
+                          setSelectedCategory(event.category);
+                          closeModal();
+                        }}>
+                        {event.category}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           )}
@@ -49,14 +66,21 @@ const Eventslist = () => {
       </ul>
 
       <ul className={s.event__list}>
-        {events.map((event) => (
+        {events.filter((event) => !selectedCategory || event.category === selectedCategory).map((event) => (
         <li className={s.event__item} key={event.id}>
+          <div className={s.relativeContainer}>
           <div className={s.eventInfoContainer}>
-            <button className={s.category}>{event.category}</button>
+            <button
+              className={s.category}
+              onClick={() => {
+                setSelectedCategory(event.category);
+                closeModal()}}>
+              {event.category}
+            </button>
             <button className={s.priority} style={{ color: event.color }}>{event.priority}</button>
           </div>
           
-          <img className={s.event__itemImg} src={event.src} alt={event.alt} />
+          <img loading='lazy' className={s.event__itemImg} src={event.src} alt={event.alt} />
 
           <div className={s.eventDataContainer}>
             <ul className={s.event__dataList}>
@@ -64,7 +88,7 @@ const Eventslist = () => {
               <li className={s.event__dataListItem}><p className={s.event__dataDescription}>{event.city}</p></li>
             </ul>
           </div>
-          
+          </div>
           <div className={s.event__itemContainer}>
             <h2 className={s.event__itemTitle}>{event.title}</h2>
             <p className={s.event__itemDescription}>{event.description}</p>
@@ -72,7 +96,8 @@ const Eventslist = () => {
         </li>
         ))}
       </ul>
-    </div>
+      </div>
+      </section>
   )
 };
 

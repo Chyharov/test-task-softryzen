@@ -1,3 +1,5 @@
+@import '../../sass/utils/mixin';
+
 .event__container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -18,15 +20,32 @@
 }
 
 .buttonsList__itemBtn {
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    width: 56px;
-    height: 56px;
     background-color: var(--backgroundColor);
     border-radius: 8px;
     box-shadow: 2px 4px 9px 0 #A68DAE;
+}
+
+.filter__listItem {
+    border-top: solid 1px var(--disableColor);
+    padding: 8px 16px;
+}
+
+.filter__listBtn {
+    font-family: Poppins Regular;
+    font-size: 14px;
+    color: var(--disableColor);
+    border: none;
+    background-color: transparent;
+}
+
+.filter__listBtn:hover,
+.filter__listBtn:focus {
+    color: var(--accentColor);
 }
 
 .modalBackdrop {
@@ -40,7 +59,6 @@
 
 .modalContent {
     background-color: white;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 2;
@@ -48,9 +66,40 @@
 }
 
 .closeButton {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--accentColor);
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.closeButton__img {
+    margin-right: 4px;
+}
+
+.event__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    justify-content: center;
+    justify-items: center;
+    
+    @include mq(tab) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        justify-content: center;
+        justify-items: center;
+        align-items: baseline;
+    }
+    
+    @include mq(desk) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        justify-content: center;
+        justify-items: center;
+    }
 }
 
 .event__item {
@@ -60,6 +109,14 @@
     background-color: var(--backgroundColor);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 24px;
+
+    @include mq(tab) {
+        width: 332px;
+    }
+
+    @include mq(desk) {
+        max-width: 302px;
+    }
 }
 
 .event__itemImg {
@@ -82,6 +139,7 @@
     font-family: Poppins Regular;
     font-size: 14px;
     line-height: 1.72;
+    min-height: 72px;
 }
 
 .category, 
@@ -99,14 +157,30 @@
     position: absolute;
     top: 12px;
     left: 12px;
+
+    @include mq(tab) {
+    max-width: 332px;
+    }
+
+    @include mq(desk) {
+        max-width: 302px;
+    }
 }
 
 .eventDataContainer {
     position: absolute;
-    top: 240px;
+    bottom: 0px;
     left: 0px;
     width: 272px;
     background-color: rgba(255, 255, 255, 0.8);
+    
+    @include mq(tab) {
+        width: 332px;
+    }
+    
+    @include mq(desk) {
+        max-width: 302px;
+    }
 }
 
 .category {
@@ -119,6 +193,11 @@
     display: flex;
     justify-content: space-between;
     margin: 8px 16px;
+   
+}
+
+.relativeContainer {
+    position: relative;
 }
 
 .event__dataDescription {
@@ -126,4 +205,9 @@
     font-size: 14px;
     line-height: 1.72;
     color: var(--accentColor);
+}
+
+.selectedCategory {
+    color: var(--accentColor);
+    // margin-right: 16px;
 }

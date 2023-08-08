@@ -1,37 +1,51 @@
 import React, { useState } from 'react';
 import s from './Eventslist.module.scss';
-import filterLogo2 from '../../images/icons/filters-2.svg'
-import filterLogo3 from '../../images/icons/filters-3.svg'
-import plusLogo from '../../images/icons/plus.svg'
+import icon from '../../images/icons/sprite.svg';
 import { events } from '../../services/Events.js'
 
 const Eventslist = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModalFilter, setShowModalFilter] = useState(false);
+  const [showModalSort, setShowModalSort] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  const openModal = () => {
-    setShowModal(true);
+  
+  const openModalFilter = () => {
+    setShowModalFilter(true);
   };
 
-  const closeModal = () => {
-    setShowModal(false);
+  const closeModalFilter = () => {
+    setShowModalFilter(false);
   };
+
+  const openModalSort = () => {
+    setShowModalSort(true);
+  };
+
+  const closeModalSort = () => {
+    setShowModalSort(false);
+  };
+
+  
 
   return (
     <section className={s.sectionEventList}>
     <div className={'container ' + s.event__container}>
       <ul className={s.buttons__list}>
         <li className={s.buttonsList__item}>
-          <button className={s.buttonsList__itemBtn} onClick={openModal}>
-              <p className={s.selectedCategory}>{selectedCategory || ''}</p>
-              <img className={s.buttonsList__itemImg} src={filterLogo3} alt="Моя SVG-іконка" />
+          <button className={s.buttonsList__itemBtn} onClick={openModalFilter}>
+              <p className={`${s.selectedCategory} ${selectedCategory ? s.withMargin : s.withoutMargin}`}>{selectedCategory}</p>
+              <svg className={s.buttonsList__itemImg} width="24" height="24">
+                  <use href={`${icon}#icon-shape`} style={{ '--color1': '#3F3F3F' }} />
+              </svg>
           </button>
-          {showModal && (
-            <div className={s.modalBackdrop}>
-              <div className={s.modalContent}>
-                <button className={s.closeButton} onClick={closeModal}>
-                  <img className={s.closeButton__img} src={filterLogo3} alt="Моя SVG-іконка" />
-                  <p>{selectedCategory || 'Category'}</p>
+          {showModalFilter && (
+            <div className={s.modalBackdropFilter}>
+              <div className={s.modalContentFilter}>
+                <button className={s.closeButton} onClick={closeModalFilter}>
+                  <svg className={s.buttonsList__itemImg} width="24" height="24">
+                    <use href={`${icon}#icon-shape`} style={{ '--color1': '#7B61FF' }}/>
+                  </svg>
+                  <p className={s.filter__title}>{selectedCategory || 'Category'}</p>
                 </button>
                   <ul className={s.filter__list}>
                   {events.map((event) => (
@@ -40,7 +54,7 @@ const Eventslist = () => {
                         className={`${s.filter__listBtn} ${selectedCategory === event.category ? s.selectedCategory : ""}`}
                         onClick={() => {
                           setSelectedCategory(event.category);
-                          closeModal();
+                          closeModalFilter();
                         }}>
                         {event.category}
                       </button>
@@ -53,28 +67,72 @@ const Eventslist = () => {
         </li>
 
         <li className={s.buttonsList__item}>
-          <button className={s.buttonsList__itemBtn}>
-            <img className={s.buttonsList__itemImg} src={filterLogo2} alt="Моя SVG-іконка" />
+          <button className={s.buttonsList__itemBtn} onClick={openModalSort}>
+              <svg className={s.buttonsList__itemImg} width="24" height="24">
+                  <use href={`${icon}#icon-filters-2`} />
+              </svg>
           </button>
+          {showModalSort && (
+            <div className={s.modalBackdropSort}>
+                <div className={s.modalContentSort}>
+                  
+                <button className={s.closeButtonSort} onClick={closeModalSort}>
+                  <p className={s.sort__title}>{selectedCategory || 'Sort By'}</p>
+                  <svg className={s.buttonsList__itemImg} width="24" height="24">
+                    <use href={`${icon}#icon-filters-2`} style={{ '--color1': '#7B61FF' }}/>
+                  </svg>
+                </button>
+                  
+                <ul className={s.sort__list}>
+                  <li className={s.sort__listItem}>
+                    <button className={s.sort__listBtn} onClick={() => {closeModalSort()}}>by name <svg width="24" height="24"><use href={`${icon}#icon-shapeup`}/></svg>
+                    </button>
+                  </li>
+                  <li className={s.sort__listItem}>
+                    <button className={s.sort__listBtn} onClick={() => {closeModalSort()}}>by name <svg width="24" height="24"><use href={`${icon}#icon-shapedown`}/></svg>
+                    </button>
+                  </li>
+                  <li className={s.sort__listItem}>
+                    <button className={s.sort__listBtn} onClick={() => {closeModalSort()}}>by data <svg width="24" height="24"><use href={`${icon}#icon-shapeup`}/></svg>
+                    </button>
+                  </li>
+                  <li className={s.sort__listItem}>
+                    <button className={s.sort__listBtn} onClick={() => {closeModalSort()}}>by data <svg width="24" height="24"><use href={`${icon}#icon-shapedown`}/></svg>
+                    </button>
+                  </li>
+                  <li className={s.sort__listItem}>
+                    <button className={s.sort__listBtn} onClick={() => {closeModalSort()}}>by priority <svg width="24" height="24"><use href={`${icon}#icon-shapeup`}/></svg>
+                    </button>
+                  </li>
+                  <li className={s.sort__listItem}>
+                    <button className={s.sort__listBtn} onClick={() => {closeModalSort()}}>by priority <svg width="24" height="24"><use href={`${icon}#icon-shapedown`}/></svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )}
         </li>
 
         <li className={s.buttonsList__item}>
           <button className={s.buttonsList__itemBtn} style={{ backgroundColor: '#7B61FF' }}>
-            <img className={s.buttonsList__itemImg} src={plusLogo} alt="Моя SVG-іконка" />
+            <svg className={s.buttonsList__itemImg} width="24" height="24">
+                <use href={`${icon}#icon-plus`} />
+              </svg>
           </button>
         </li>
       </ul>
 
       <ul className={s.event__list}>
         {events.filter((event) => !selectedCategory || event.category === selectedCategory).map((event) => (
-        <li className={s.event__item} key={event.id}>
+          <li className={s.event__item} key={event.id}>
           <div className={s.relativeContainer}>
           <div className={s.eventInfoContainer}>
             <button
               className={s.category}
               onClick={() => {
                 setSelectedCategory(event.category);
-                closeModal()}}>
+                closeModalFilter()}}>
               {event.category}
             </button>
             <button className={s.priority} style={{ color: event.color }}>{event.priority}</button>

@@ -1,3 +1,4 @@
+import icon from '../../images/icons/sprite.svg';
 import s from './Header.module.scss';
 
 const Header = () => {
@@ -15,6 +16,9 @@ const Header = () => {
 
         <form className={s.formSearch}>
           <button className={s.btn__submit}>
+            <svg className={s.buttonsList__itemImg} width="24" height="24">
+              <use href={`${icon}#icon-search`} />
+            </svg>
           </button>
           <input className={s.inputSearch} type="text" placeholder="Search by keywords"/>
         </form>

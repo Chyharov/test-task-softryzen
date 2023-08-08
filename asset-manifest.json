@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-task-softryzen/static/css/main.4e634173.css",
-    "main.js": "/test-task-softryzen/static/js/main.90141a2b.js",
+    "main.css": "/test-task-softryzen/static/css/main.965aab13.css",
+    "main.js": "/test-task-softryzen/static/js/main.efe96c7b.js",
     "static/media/backgroundPng.png": "/test-task-softryzen/static/media/backgroundPng.5493670ecd82ac513f10.png",
     "static/media/Rectangle 330.jpg": "/test-task-softryzen/static/media/Rectangle 330.b2b57516d694e44eb309.jpg",
     "static/media/Poppins-Regular.ttf": "/test-task-softryzen/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -13,11 +13,11 @@
     "static/media/filters-2.svg": "/test-task-softryzen/static/media/filters-2.5a92dec543a6e2f64bee2f03784de2e7.svg",
     "static/media/filters-3.svg": "/test-task-softryzen/static/media/filters-3.2ee52e1e77490c3bc0508e61ae61bca2.svg",
     "static/media/plus.svg": "/test-task-softryzen/static/media/plus.628a4b0990259b23cd3aff5f156c0f8c.svg",
-    "main.4e634173.css.map": "/test-task-softryzen/static/css/main.4e634173.css.map",
-    "main.90141a2b.js.map": "/test-task-softryzen/static/js/main.90141a2b.js.map"
+    "main.965aab13.css.map": "/test-task-softryzen/static/css/main.965aab13.css.map",
+    "main.efe96c7b.js.map": "/test-task-softryzen/static/js/main.efe96c7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e634173.css",
-    "static/js/main.90141a2b.js"
+    "static/css/main.965aab13.css",
+    "static/js/main.efe96c7b.js"
   ]
 }

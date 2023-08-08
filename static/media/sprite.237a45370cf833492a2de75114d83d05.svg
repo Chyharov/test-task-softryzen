@@ -1,0 +1,36 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+
+        <symbol id="icon-shape" viewBox="0 0 30 32">
+            <path fill="none" stroke="#3F3F3F" style="stroke: var(--color1, #3F3F3F)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5263" d="M1.684 1.684l8.421 13.474v10.105l10.105 5.053v-15.158l8.421-13.474h-26.947z"></path>
+        </symbol>
+
+        <symbol id="icon-chevron-down-small" viewBox="0 0 32 32">
+            <path d="M9.333 13.333l6.667 6.667 6.667-6.667"></path>
+        </symbol>
+
+        <symbol id="icon-cross-small" viewBox="0 0 32 32">
+            <path d="M21.333 10.667l-10.667 10.667M10.667 10.667l10.667 10.667"></path>
+        </symbol>
+
+        <symbol id="icon-filters-2" viewBox="0 0 32 32">
+            <path fill="none" stroke="#3F3F3F" style="stroke: var(--color1, #3F3F3F)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 6.667c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667M18.667 6.667c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667M18.667 6.667h8M13.333 6.667h-8M21.333 16c0 1.473 1.194 2.667 2.667 2.667s2.667-1.194 2.667-2.667c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667zM21.333 16h-16M10.667 25.333c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667c0 1.473 1.194 2.667 2.667 2.667s2.667-1.194 2.667-2.667zM10.667 25.333h16"></path>
+        </symbol>
+
+        <symbol id="icon-plus" viewBox="0 0 32 32">
+            <path fill="#ffffff" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" d="M16 5.333v21.333M5.333 16h21.333"></path>
+        </symbol>
+
+        <symbol id="icon-search" viewBox="0 0 32 32">
+            <path fill="#7b61ff" style="fill: var(--color1, #7b61ff)" d="M25.96 27.374c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-1.414 1.414zM23 14c0 4.971-4.029 9-9 9v2c6.075 0 11-4.925 11-11h-2zM14 23c-4.971 0-9-4.029-9-9h-2c0 6.075 4.925 11 11 11v-2zM5 14c0-4.971 4.029-9 9-9v-2c-6.075 0-11 4.925-11 11h2zM14 5c4.971 0 9 4.029 9 9h2c0-6.075-4.925-11-11-11v2zM27.374 25.96l-5.583-5.583-1.414 1.414 5.583 5.583 1.414-1.414z"></path>
+        </symbol>
+
+        <symbol id="icon-shapedown" viewBox="0 0 27 32">
+            <path fill="none" stroke="#aca7c4" style="stroke: var(--color1, #aca7c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M13.333 29.333v-26.667M13.333 29.333l-10.667-10.667M13.333 29.333l10.667-10.667"></path>
+        </symbol>
+
+        <symbol id="icon-shapeup" viewBox="0 0 27 32">
+            <path fill="none" stroke="#aca7c4" style="stroke: var(--color1, #aca7c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M13.333 2.667v26.667M13.333 2.667l10.667 10.667M13.333 2.667l-10.667 10.667"></path>
+        </symbol>
+    </defs>
+</svg>

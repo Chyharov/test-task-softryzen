@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import s from './EventPage.module.scss';
+import s from './Eventslist.module.scss';
+import { events } from '../../services/Events';
 import filterLogo2 from '../../images/icons/filters-2.svg'
 import filterLogo3 from '../../images/icons/filters-3.svg'
 import plusLogo from '../../images/icons/plus.svg'
 import plusLogo2 from '../../images/eventPictures/Rectangle 330.jpg'
 
 
-const EventPage = () => {
-
+const Eventslist = () => {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -20,7 +20,6 @@ const EventPage = () => {
 
   return (
     <div className={'container ' + s.event__container}>
-      
       <ul className={s.buttons__list}>
         <li className={s.buttonsList__item}>
           <button className={s.buttonsList__itemBtn} onClick={openModal}>
@@ -52,15 +51,31 @@ const EventPage = () => {
       </ul>
 
       <ul className={s.event__list}>
-        <li className={s.event__item}>
+        {events.map((event) => (
+        <li className={s.event__item} key={event.id}>
+          <div className={s.eventInfoContainer}>
+            <button className={s.category}>{event.category}</button>
+            <button className={s.priority} style={{ color: event.color }}>{event.priority}</button>
+          </div>
+          
           <img className={s.event__itemImg} src={plusLogo2} alt="pictures" />
-          <h2 className={s.event__itemTitle}>Galery Opening</h2>
-          <p className={s.event__itemDescription}>Discover an enchanting evening celebrating the world of art at our exclusive gallery opening.</p>
+
+          <div className={s.eventDataContainer}>
+            <ul className={s.event__dataList}>
+                <li className={s.event__dataListItem}><p className={s.event__dataDescription}>{event.date} at {event.time}</p></li>
+              <li className={s.event__dataListItem}><p className={s.event__dataDescription}>{event.city}</p></li>
+            </ul>
+          </div>
+          
+          <div className={s.event__itemContainer}>
+            <h2 className={s.event__itemTitle}>{event.title}</h2>
+            <p className={s.event__itemDescription}>{event.description}</p>
+          </div>
         </li>
+        ))}
       </ul>
     </div>
-
   )
 };
 
-export default EventPage;
+export default Eventslist;

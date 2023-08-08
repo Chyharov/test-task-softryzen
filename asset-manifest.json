@@ -1,9 +1,16 @@
 {
   "files": {
     "main.css": "/test-task-softryzen/static/css/main.965aab13.css",
-    "main.js": "/test-task-softryzen/static/js/main.efe96c7b.js",
+    "main.js": "/test-task-softryzen/static/js/main.16130499.js",
     "static/media/backgroundPng.png": "/test-task-softryzen/static/media/backgroundPng.5493670ecd82ac513f10.png",
-    "static/media/Rectangle 330.jpg": "/test-task-softryzen/static/media/Rectangle 330.b2b57516d694e44eb309.jpg",
+    "static/media/Rectangle344.jpg": "/test-task-softryzen/static/media/Rectangle344.535c207e7d0a7b82874a.jpg",
+    "static/media/Rectangle349.jpg": "/test-task-softryzen/static/media/Rectangle349.6b8a0a630809c2ef820c.jpg",
+    "static/media/Rectangle350.jpg": "/test-task-softryzen/static/media/Rectangle350.9fc86d53e62e94e1f2c1.jpg",
+    "static/media/Rectangle346.jpg": "/test-task-softryzen/static/media/Rectangle346.d6559dcf1023f83deda8.jpg",
+    "static/media/Rectangle348.jpg": "/test-task-softryzen/static/media/Rectangle348.74eacaf130497fab364c.jpg",
+    "static/media/Rectangle347.jpg": "/test-task-softryzen/static/media/Rectangle347.763cad11872d1a6e1378.jpg",
+    "static/media/Rectangle330.jpg": "/test-task-softryzen/static/media/Rectangle330.b2b57516d694e44eb309.jpg",
+    "static/media/Rectangle345.jpg": "/test-task-softryzen/static/media/Rectangle345.4fa239e412a0ea7513b2.jpg",
     "static/media/Poppins-Regular.ttf": "/test-task-softryzen/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/test-task-softryzen/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "static/media/Poppins-SemiBold.ttf": "/test-task-softryzen/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
@@ -14,10 +21,10 @@
     "static/media/filters-3.svg": "/test-task-softryzen/static/media/filters-3.2ee52e1e77490c3bc0508e61ae61bca2.svg",
     "static/media/plus.svg": "/test-task-softryzen/static/media/plus.628a4b0990259b23cd3aff5f156c0f8c.svg",
     "main.965aab13.css.map": "/test-task-softryzen/static/css/main.965aab13.css.map",
-    "main.efe96c7b.js.map": "/test-task-softryzen/static/js/main.efe96c7b.js.map"
+    "main.16130499.js.map": "/test-task-softryzen/static/js/main.16130499.js.map"
   },
   "entrypoints": [
     "static/css/main.965aab13.css",
-    "static/js/main.efe96c7b.js"
+    "static/js/main.16130499.js"
   ]
 }

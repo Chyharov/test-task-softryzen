@@ -30,111 +30,10 @@
     box-shadow: 2px 4px 9px 0 #A68DAE;
 }
 
-.filter__listItem {
-    border-top: solid 1px var(--disableColor);
-    padding: 8px 16px;
-}
-
-.filter__listBtn {
-    font-family: Poppins Regular;
-    font-size: 14px;
-    color: var(--disableColor);
-    border: none;
-    background-color: transparent;
-}
-
-.filter__listBtn:hover,
-.filter__listBtn:focus {
-    color: var(--accentColor);
-}
-
 .soft__title,
 .filter__title {
     font-family: Poppins Medium;
     font-size: 16px;
-}
-
-.sort__listItem {
-    border-top: solid 1px var(--disableColor);
-    padding: 9px 24px;
-}
-
-.sort__listItem:hover,
-.sort__listItem:focus {
-    --color: #7b61ff
-}
-
-.sort__listBtn {
-    width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Poppins Regular;
-    font-size: 14px;
-    color: var(--disableColor);
-    border: none;
-    background-color: transparent;
-}
-
-.sort__listBtn:hover,
-.sort__listBtn:focus {
-    color: var(--accentColor);
-    fill: var(--accentColor);
-}
-
-.modalBackdropFilter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modalBackdropSort {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modalContentFilter {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-    width: 158px;
-}
-
-.modalContentSort {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-    width: 170px;
-}
-
-.closeButton {
-    padding: 16px 21px;
-    display: flex;
-    align-items: center;
-    color: var(--accentColor);
-    background-color: transparent;
-    border: none;
-}
-
-.closeButtonSort {
-    width: 170px;
-    padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--accentColor);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 
 .closeButton__img {
@@ -269,11 +168,8 @@
     color: var(--accentColor);
 }
 
-.selectedCategory {
-    color: var(--accentColor);
-}
-
 .withMargin {
+    color: var(--accentColor);
     margin-right: 16px;
 }
 

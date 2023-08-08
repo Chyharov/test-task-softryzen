@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import s from './Eventslist.module.scss';
-import { events } from '../../services/Events';
 import filterLogo2 from '../../images/icons/filters-2.svg'
 import filterLogo3 from '../../images/icons/filters-3.svg'
 import plusLogo from '../../images/icons/plus.svg'
-import plusLogo2 from '../../images/eventPictures/Rectangle 330.jpg'
-
+import { events } from '../../services/Events.js'
 
 const Eventslist = () => {
   const [showModal, setShowModal] = useState(false);
@@ -58,7 +56,7 @@ const Eventslist = () => {
             <button className={s.priority} style={{ color: event.color }}>{event.priority}</button>
           </div>
           
-          <img className={s.event__itemImg} src={plusLogo2} alt="pictures" />
+          <img className={s.event__itemImg} src={event.src} alt={event.alt} />
 
           <div className={s.eventDataContainer}>
             <ul className={s.event__dataList}>

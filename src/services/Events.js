@@ -8,7 +8,9 @@ export const events = [
     city: "Kyiv",
     priority: "High",
     category: "Art",
-    color: "#FF2B77"
+    color: "#FF2B77",
+    src: require('../images/eventPictures/Rectangle330.jpg'),
+    alt: "event image"
   },
   {
     id: 2,
@@ -19,7 +21,9 @@ export const events = [
     city: "Kyiv",
     category: "Conference",
     priority: "Medium",
-    color: "#E2A300"
+    color: "#E2A300",
+    src: require('../images/eventPictures/Rectangle344.jpg'),
+    alt: "event image"
   },
   {
     id: 3,
@@ -30,7 +34,9 @@ export const events = [
     city: "Kyiv",
     category: "Workshop",
     priority: "High",
-    color: "#FF2B77"
+    color: "#FF2B77",
+    src: require('../images/eventPictures/Rectangle345.jpg'),
+    alt: "event image"
   },
   {
     id: 4,
@@ -41,7 +47,9 @@ export const events = [
     city: "Kyiv",
     category: "Party",
     priority: "High",
-    color: "#FF2B77"
+    color: "#FF2B77",
+    src: require('../images/eventPictures/Rectangle346.jpg'),
+    alt: "event image"
   },
   {
     id: 5,
@@ -52,7 +60,9 @@ export const events = [
     city: "Kyiv",
     category: "Business",
     priority: "Medium",
-    color: "#E2A300"
+    color: "#E2A300",
+    src: require('../images/eventPictures/Rectangle347.jpg'),
+    alt: "event image"
   },
   {
     id: 6,
@@ -63,7 +73,9 @@ export const events = [
     city: "Kyiv",
     category: "Workshop",
     priority: "Low",
-    color: "#6BD475"
+    color: "#6BD475",
+    src: require('../images/eventPictures/Rectangle348.jpg'),
+    alt: "event image"
   },
   {
     id: 7,
@@ -74,7 +86,9 @@ export const events = [
     city: "Kyiv",
     category: "Music",
     priority: "High",
-    color: "#FF2B77"
+    color: "#FF2B77",
+    src: require('../images/eventPictures/Rectangle349.jpg'),
+    alt: "event image"
   },
   {
     id: 8,
@@ -85,6 +99,8 @@ export const events = [
     city: "Kyiv",
     category: "Sport",
     priority: "Low",
-    color: "#6BD475"
+    color: "#6BD475",
+    src: require('../images/eventPictures/Rectangle350.jpg'),
+    alt: "event image"
   },
 ];

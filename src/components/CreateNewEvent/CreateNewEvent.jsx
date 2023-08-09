@@ -10,7 +10,7 @@ const CreateNewEvent = () => {
         <section className={s.createNewEvent}>
             <div className={'container ' + s.event__container}>
 
-                <button className={s.button__back}>
+                <button className={s.button__back} aria-label="button back">
                     <Link className={s.createNewEvent__linkBack} to="/">
                     <svg className={s.buttonsList__itemImg} width="24" height="24">
                         <use href={`${icon}#icon-arrow-left`} />

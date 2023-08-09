@@ -33,7 +33,7 @@ const Eventslist = () => {
     <div className={'container ' + s.event__container}>
       <ul className={s.buttons__list}>
         <li className={s.buttonsList__item}>
-          <button className={s.buttonsList__itemBtn} onClick={openModalFilter}>
+          <button aria-label="open filter list" className={s.buttonsList__itemBtn} onClick={openModalFilter}>
               <p className={`${s.selectedCategory} ${selectedCategory ? s.withMargin : s.withoutMargin}`}>{selectedCategory}</p>
               <svg className={s.buttonsList__itemImg} width="24" height="24">
                   <use href={`${icon}#icon-shape`} style={{ '--color1': '#3F3F3F' }} />
@@ -51,7 +51,7 @@ const Eventslist = () => {
           </li>
 
         <li className={s.buttonsList__item}>
-          <button className={s.buttonsList__itemBtn} onClick={openModalSort}>
+          <button aria-label="open sort list" className={s.buttonsList__itemBtn} onClick={openModalSort}>
               <svg className={s.buttonsList__itemImg} width="24" height="24">
                   <use href={`${icon}#icon-filters-2`} />
               </svg>
@@ -66,7 +66,7 @@ const Eventslist = () => {
           </li>
 
         <li className={s.buttonsList__item}>
-          <button className={s.buttonsList__itemBtn} style={{ backgroundColor: '#7B61FF' }}>
+          <button aria-label="create event" className={s.buttonsList__itemBtn} style={{ backgroundColor: '#7B61FF' }}>
           <Link className={s.header__linkBack} to="/CreateEventPage">
         
             <svg className={s.buttonsList__itemImg} width="24" height="24">
@@ -82,14 +82,14 @@ const Eventslist = () => {
           <li className={s.event__item} key={event.id}>
           <div className={s.relativeContainer}>
           <div className={s.eventInfoContainer}>
-            <button
+            <button aria-label="close filter list"
               className={s.category}
               onClick={() => {
                 setSelectedCategory(event.category);
                 closeModalFilter()}}>
               {event.category}
             </button>
-            <button className={s.priority} style={{ color: event.color }}>{event.priority}</button>
+            <button aria-label="filter list" className={s.priority} style={{ color: event.color }}>{event.priority}</button>
           </div>
           
           <img loading='lazy' className={s.event__itemImg} src={event.src} alt={event.alt} />

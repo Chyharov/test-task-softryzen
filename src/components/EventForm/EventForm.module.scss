@@ -33,3 +33,20 @@
     padding: 16px 75.5px;
     margin-top: 40px;
 }
+
+.disabled {
+    background-color: var(--disableColor);
+}
+
+.errorInput {
+    border: 1px solid #FF2B77;
+}
+
+.error {
+    margin-top: -16px;
+    margin-left: auto;
+    font-family: Poppins Regular;
+    font-size: 12px;
+    line-height: 1.34;
+    color: #FF2B77;
+}

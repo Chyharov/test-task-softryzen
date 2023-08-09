@@ -10,13 +10,12 @@ const Header = () => {
           <h2 className={s.nameLogo}><Link className={s.createNewEvent__linkBack} to="/">Event Planner</Link></h2>
 
           <select className={s.selectLanguage}>
-            <option value="option1">UA</option>
-            <option value="option2">EN</option>
+            <option value="option2">UK</option>
           </select>
         </div>
 
         <form className={s.formSearch}>
-          <button className={s.btn__submit}>
+          <button aria-label="button search" className={s.btn__submit}>
             <svg className={s.buttonsList__itemImg} width="24" height="24">
               <use href={`${icon}#icon-search`} />
             </svg>

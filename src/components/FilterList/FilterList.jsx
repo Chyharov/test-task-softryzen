@@ -8,7 +8,7 @@ const FilterList = ({ closeModalFilter, selectedCategory, setSelectedCategory, e
     <div className={s.modalBackdropFilter}>
       <div className={s.modalContentFilter}>
 
-        <button className={s.closeButton} onClick={closeModalFilter}>
+        <button aria-label="close filter list" className={s.closeButton} onClick={closeModalFilter}>
             <svg className={s.buttonsList__itemImg} width="24" height="24">
                 <use href={`${icon}#icon-shape`} style={{ '--color1': '#7B61FF' }}/>
             </svg>
@@ -18,7 +18,7 @@ const FilterList = ({ closeModalFilter, selectedCategory, setSelectedCategory, e
         <ul className={s.filter__list}>
           {events.map((event) => (
             <li className={s.filter__listItem} key={event.category}>
-              <button
+              <button aria-label="set filter item"
                 className={`${s.filter__listBtn} ${selectedCategory === event.category ? s.selectedCategory : ""}`}
                 onClick={() => {
                   setSelectedCategory(event.category);

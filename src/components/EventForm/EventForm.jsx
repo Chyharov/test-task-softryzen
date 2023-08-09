@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import s from './EventForm.module.scss';
 
 const EventForm = ({ addEvent }) => {

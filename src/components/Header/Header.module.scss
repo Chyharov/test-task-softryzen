@@ -2,6 +2,7 @@
 
 .header {
   background-color: #FEFCFF;
+  outline: 1px solid var(--accentColor);
 
   @include mq(tab) {
 

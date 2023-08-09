@@ -1,0 +1,35 @@
+
+.eventForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 272px;
+    background-color: var(--backgroundColor);
+    box-shadow: 2px 4px 9px 0 #A68DAE;
+    padding: 40px 16px;
+    border-radius: 8px;
+}
+
+.form__title {
+    font-family: Poppins Regular;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--accentColor);
+    margin-bottom: 8px;
+}
+
+.form__input {
+    padding: 16px 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--disableColor);
+}
+
+.form__submit {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accentColor);
+    color: var(--backgroundColor);
+    padding: 16px 75.5px;
+    margin-top: 40px;
+}

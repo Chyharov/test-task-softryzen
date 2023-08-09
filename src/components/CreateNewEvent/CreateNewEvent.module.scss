@@ -1,0 +1,20 @@
+.event__container {
+    padding-top: 42px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.createNewEvent__linkBack {
+    font-family: Poppins Medium;
+    font-size: 14px;
+    color: var(--accentColor);
+    margin-bottom: 24px;
+}
+
+.createNewEvent__Title {
+    font-family: Poppins SemiBold;
+    font-size: 24px;
+    color: var(--secondTextColor);
+    margin-bottom: 24px;
+}

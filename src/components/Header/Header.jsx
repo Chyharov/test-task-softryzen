@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import icon from '../../images/icons/sprite.svg';
 import s from './Header.module.scss';
 
@@ -6,7 +7,7 @@ const Header = () => {
     <header className={s.header}>
       <div className={'container ' + s.header__padding}>
         <div className={s.header__container}>
-          <h2 className={s.nameLogo}>Event Planner</h2>
+          <h2 className={s.nameLogo}><Link className={s.createNewEvent__linkBack} to="/">Event Planner</Link></h2>
 
           <select className={s.selectLanguage}>
             <option value="option1">UA</option>

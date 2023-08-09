@@ -98,12 +98,15 @@ const handleLocationChange = (e) => {
 
   return (
     <form className={s.eventForm} onSubmit={handleSubmit}>
+
+      <div className={s.left__container}>
+
       <h2 className={s.form__title}>Title</h2>
       <input className={`${s.form__input} ${titleError ? s.errorInput : ''}`} type="text" value={title} onChange={handleTitleChange}/>
       {titleError && <p className={s.error}>{titleError}</p>}
 
       <h2 className={s.form__title}>Description</h2>
-      <input className={`${s.form__input} ${descriptionError ? s.errorInput : ''}`} type="text" value={description} onChange={handleDescriptionChange}/>
+      <input style={{ height: '156px' }} className={`${s.form__input} ${descriptionError ? s.errorInput : ''}`} type="text" value={description} onChange={handleDescriptionChange}/>
       {descriptionError && <p className={s.error}>{descriptionError}</p>}
 
       <h2 className={s.form__title}>Select date</h2>
@@ -111,6 +114,10 @@ const handleLocationChange = (e) => {
 
       <h2 className={s.form__title}>Select time</h2>
       <input className={s.form__input} type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+        
+      </div>
+      
+      <div className={s.right__container}>
 
       <h2 className={s.form__title}>Location</h2>
       <input
@@ -141,14 +148,16 @@ const handleLocationChange = (e) => {
         <option value="Medium">Medium</option>
         <option value="Low">Low</option>
       </select>
-
-     <button aria-label="button submit"
+        <button aria-label="button submit"
         className={`${s.form__submit} ${isFormValid() ? '' : s.disabled}`}
         type="submit"
         disabled={!isFormValid()}
       >
         Add Event
       </button>
+      </div>
+
+     
     </form>
   );
 };

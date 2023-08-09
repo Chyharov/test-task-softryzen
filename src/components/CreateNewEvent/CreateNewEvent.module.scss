@@ -18,3 +18,16 @@
     color: var(--secondTextColor);
     margin-bottom: 24px;
 }
+.buttonsList__itemImg {
+    margin-right: 8px;
+}
+.createNewEvent__linkBack {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button__back {
+    border: none;
+    background-color: transparent;
+}

@@ -76,13 +76,25 @@
     }
 
     @include mq(desk) {
-        max-width: 302px;
+        width: 302px;
     }
 }
 
 .event__itemImg {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    width: 272px;
+    height: 280px;
+
+    @include mq(tab) {
+        width: 332px;
+        height: 340px;
+    }
+    
+    @include mq(desk) {
+        width: 302px;
+        height: 310px;
+    }
 }
 
 .event__itemContainer {

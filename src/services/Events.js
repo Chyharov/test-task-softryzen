@@ -104,3 +104,7 @@ export const events = [
     alt: "event image"
   },
 ];
+
+export function addNewEvent(newEvent) {
+  events.push(newEvent);
+}

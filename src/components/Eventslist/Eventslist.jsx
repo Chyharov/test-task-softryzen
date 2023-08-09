@@ -89,7 +89,7 @@ const Eventslist = () => {
                 closeModalFilter()}}>
               {event.category}
             </button>
-            <button aria-label="filter list" className={s.priority} style={{ color: event.color }}>{event.priority}</button>
+            <button aria-label="filter list item" className={s.priority} style={{ color: event.color }}>{event.priority}</button>
           </div>
           
           <img loading='lazy' className={s.event__itemImg} src={event.src} alt={event.alt} />
